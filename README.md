@@ -34,6 +34,9 @@ With API running, visit http://localhost:8000/docs or http://127.0.0.1:8000/docs
 
 ## Manual Documentation
 
+Using makefile to run API above will automatically host the API at http://localhost:8000/ or http://127.0.0.1:8000 <br />
+See endpoint details below for specific API interaction examples using curl.
+
 ### /add-transaction/
 Method: POST <br />
 Parameters: None <br />
@@ -50,6 +53,15 @@ Response Body:
   {
     "message": "string"
   }
+```
+Example:
+```
+curl -X POST http://localhost:8000/add-transaction/ -H 'Content-Type: application/json' -d '{"payer":"DANNON","points":100, "timestamp": "2022-11-02T14:00:00Z"}'
+```
+Expected Response:
+
+```
+{"message":"100 points successfully added for payer: DANNON"}
 ```
 
 ### /spend-points/
@@ -68,6 +80,14 @@ Response Body: response body is a dictionary with keys = payer and value = point
     ...
   }
 ```
+Example:
+```
+curl -X POST http://localhost:8000/spend-points/ -H 'Content-Type: application/json' -d '{"points":50}'  
+```
+Expected Response:
+```
+{"DANNON":-50}
+```
 
 ### /get-points/
 Method: GET <br />
@@ -79,6 +99,14 @@ Response Body: response body is a dictionary with keys = payer and value = point
     payer: int
     ...
   }
+```
+Example:
+```
+curl -X GET http://localhost:8000/get-points/ 
+```
+Expected Response:
+```
+{"DANNON":50}
 ```
 
 # Testing
