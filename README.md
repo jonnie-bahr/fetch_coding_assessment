@@ -4,7 +4,7 @@ Coding assessment for backend software engineer position at Fetch Rewards
 # Getting Started
 
 ## Prerequisities
-- Python3 installed
+- Python3 installed with pip
 
 ## Install packages in shell
 ```
