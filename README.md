@@ -35,7 +35,8 @@ With API running, visit http://localhost:8000/docs or http://127.0.0.1:8000/docs
 ## Manual Documentation
 
 Using makefile to run API above will automatically host the API at http://localhost:8000/ or http://127.0.0.1:8000 <br />
-See endpoint details below for specific API interaction examples using curl.
+See endpoint details below for specific API interaction examples using curl. <br />
+Expected responses for examples assume you executed only the example API calls and that they were executed in the order presented.
 
 ### /add-transaction/
 Method: POST <br />
