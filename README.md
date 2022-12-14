@@ -27,6 +27,22 @@ cd fetch_coding_assessment
 make test
 ```
 
+## Manually Perform Above Steps
+### Install packages
+```
+pip3 install -r requirements.txt
+cd fetch_coding_assessment
+```
+### Start App
+```
+python -m uvicorn main:app
+```
+### Run Tests
+```
+python -m pytest
+```
+
+
 # Documentation
 
 ## OpenAPI Documentation
