@@ -6,7 +6,7 @@ Coding assessment for backend software engineer position at Fetch Rewards
 ## Prerequisities
 - Python3 installed with pip
 
-## Install packages in shell
+## Install packages using Makefile
 ```
 bash
 cd fetch_coding_assessment
