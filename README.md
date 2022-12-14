@@ -30,7 +30,7 @@ make test
 ## Manually Perform Above Steps
 ### Install packages
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 ### Start App
 ```
