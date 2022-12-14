@@ -31,7 +31,6 @@ make test
 ### Install packages
 ```
 pip3 install -r requirements.txt
-cd fetch_coding_assessment
 ```
 ### Start App
 ```
